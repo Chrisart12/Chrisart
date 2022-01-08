@@ -1,0 +1,312 @@
+/*---- Fonts -----------------------*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*----- end fonts ---------------------*/
+
+body
+{
+    font-family:open_sansregular, sans-serif, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------Start header ---------------*/
+.navbar
+{
+    background: #1c313a;
+    border-color: #1c313a;
+    padding-top: 10px;
+    min-height: 70px;
+    font-family: robotoregular, sans-serif, serif;
+    border-bottom:  1px solid #17FDFD;
+}
+
+.navbar-brand
+{
+    padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: white;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus 
+{
+  color: #17FDFD;
+  background: transparent;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus 
+{
+  text-decoration: none;
+  background: #17FDFD;
+}
+
+.dropdown-menu
+{
+    background: #1c313a;
+}
+
+.dropdown-menu > li > a
+{
+    color: white;
+    background: #1c313a;
+    font-size: 13px; 
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus
+{
+  color: #17FDFD;
+  background: #1c313a;
+}
+/*-----------End header ---------------*/
+
+
+/*-----------Start Section ------------*/
+section
+{
+    min-height: 600px;
+    background-color: #455A64;
+    color: white;
+    font-size: 15px;
+}
+
+.section
+{
+    padding-bottom: 60px;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+
+}
+
+#slider1
+{
+    margin: 0;
+    padding-top: 30px;
+    background-image: url('../images/slider3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#slider2
+{
+    margin: 0;
+    padding-top: 30px;
+    background-image: url('../images/slider2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#slider3
+{
+    margin: 0;
+    padding-top: 30px;
+    background-image: url('../images/slider1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+h2
+{
+    text-align: center;
+   /* margin-top: 120px;*/
+    margin-bottom: 50px;
+    color: #17FDFD;
+}
+
+#photo
+{
+    border-radius: 200px;
+    border: 4px solid #17FDFD;
+}
+
+.text
+{
+    text-align: justify ;
+}
+
+.panel-info
+{
+    background: #c1d5e0;
+    border: 1px solid #17FDFD;
+    margin-bottom: 70px;
+}
+
+.panel-heading
+{
+    background: #17FDFD;
+    text-align: center;
+}
+
+.title_form
+{
+    padding-bottom: 30px;
+    padding-top: 120px;
+    text-align: center;
+    margin: auto; 
+}
+
+.btn-info
+{
+    background: #17FDFD;
+    color: #455a64;
+    border: 1px solid #00e5ff;
+}
+
+/*Jeu sur les images*/
+.toile:hover
+{
+    opacity: 6;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*-----------End section ------------
+
+
+
+/*--- start footer ----------------------*/
+footer
+{
+    padding-top: 40px;
+    background-color: #1c313a;
+    color: #DFDDDD;
+    border-top:  1px solid #17FDFD;
+    padding-bottom: 20px;
+}
+
+#adresse
+{
+    font-size: 16px;
+}
+
+#facebook, #linkedin
+{
+    border-radius: 5px;
+    width: 12%;
+}
+
+#twitter, #instagram
+{
+    width: 14%;
+}
+
+.bas_de_page
+{
+    font-weight: bold;
+}
+
+#copyright
+{
+    text-align: center;
+    color:#ABAAAA;
+}
+
+/*--- end footer --------------------------*/
+
+/*----START SMARTPHONE----*/
+@media(max-width:767px)
+{
+  /*-----------Start header ---------------*/
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a 
+    {
+        color: white;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover 
+    {
+        background: #17FDFD;
+    }
+  /*-----------End header ---------------*/
+
+  /*-----------Start Section ------------*/
+    #photo
+    {
+        margin-bottom: 40px;
+        width: 80%;
+        text-align: center;
+
+    }
+  /*-----------End Section ------------*/
+
+}
+/*--- END SMARTPHONE-------------*/
+
+
+/*-----START TABLETTE --------------*/
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+ and (orientation : portrait)*/
+@media (min-width: 768px) and (max-width: 1199px)
+{
+    /*-----------Start Section ------------*/
+    .section
+    {
+        padding-top: 190px;
+    }
+
+    #photo
+    {
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .title_form
+    {
+        padding-top: 190px;
+    }
+  /*-----------End Section ------------*/
+}
+
+/* Start tablette landscape*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+}
+/* End tablette landscape*/
+
+/*-----END TABLETTE --------------*/
+
+    
